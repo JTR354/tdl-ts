@@ -22,3 +22,8 @@ function myReadonly(todo) {
   }
   return result;
 }
+
+/**
+ * vscode vim使用
+ * v-mode: 选词 w（word) 前进 b (back) 后退， y(yar)复制 p(paste) 粘贴
+ */
