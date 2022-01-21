@@ -6,6 +6,8 @@ type cases = [
     Expect<Equal<MyExclude<string | number | (() => void), Function>, Exclude<string | number | (() => void), Function>>>,
 ]
 
-function myExclude() {
-    
+type MyExclude<T, U> = T extends U ? never : U;  
+
+function myExclude(arr, value) {
+    return arr.find(v => v === value);
 }
